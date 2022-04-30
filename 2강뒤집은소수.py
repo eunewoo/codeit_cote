@@ -4,7 +4,7 @@ import sys
 n = int(input())
 a = list(map(int, input().split()))
 
-def reverse(x):
+def reverse_premium(x):
     while(x % 10 == 0):
         x = x // 10
 
@@ -29,7 +29,7 @@ def isPrime(x):
 
 b = []
 for i in range(len(a)):
-    new_a = reverse(a[i])
+    new_a = reverse_premium(a[i])
     a[i] = new_a
     if isPrime(a[i]):
         b.append(a[i])
